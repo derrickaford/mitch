@@ -1000,6 +1000,7 @@ Main components
   #call {
     position: relative;
     left: 1px;
+    margin-bottom: 10px;
   }
   #mobile-hidden {
     display: none;
