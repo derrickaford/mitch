@@ -996,19 +996,14 @@ Main components
   text-align: center;
 }
 
-#mobile-visible {
-  display: none;
-}
 @media (max-width: 550px) {
   #call {
     position: relative;
     left: 1px;
+    margin-bottom: 10px;
   }
   #mobile-hidden {
     display: none;
-  }
-  #mobile-visible {
-    display: inline;
   }
 }
 
