@@ -995,3 +995,19 @@ Main components
   list-style: none;
   text-align: center;
 }
+
+@media (max-width: 550px) {
+  #call {
+    position: relative;
+    left: 1px;
+  }
+  #mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .ribLeft, .ribRight {
+    width: 300px !important;
+  }
+}
