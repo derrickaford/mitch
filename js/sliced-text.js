@@ -1,0 +1,1 @@
+$('h1').lettering({addAttr: true, num: false});

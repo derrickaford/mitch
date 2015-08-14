@@ -1,0 +1,312 @@
+::selection {
+  background: #A60C00; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #A60C00; /* Gecko Browsers */
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+a:hover {
+  color: #4cca62;
+  text-decoration: underline;
+}
+
+#title-section {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	background: url(../img/Pinstriped_Suit.png);		/* Background pattern from subtlepatterns.com */
+}
+.ribLeft {
+	margin-top: -10px;
+	margin-bottom: -24px;
+}
+#title-section img {
+	margin-top: -40px;
+	margin-bottom: -80px;
+}
+#title-section p {
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+#noggin {
+	font-size: 5em;
+}
+.ribRight {
+	margin-top: -10px;
+	margin-bottom: -5px;
+}
+
+#cd-team {
+	background-color: red;
+	padding-top: 6%;
+	padding-bottom: 3%;
+}
+#cd-team span {
+	font-style: italic;
+}
+
+#styles-section {
+	background: url(../img/Pinstriped_Suit.png);		/* Background pattern from subtlepatterns.com */
+	color: white;
+}
+.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gallery {
+	padding: 0.25em;
+	overflow: hidden;
+}
+.gallery li {
+	float: left;
+	width: 50%;
+	padding: 0.25em;
+}
+.gallery img {
+	display: block;
+}
+.gallery li:nth-child(odd) {
+	clear: left;
+}
+@media screen and (min-width: 40em) {
+	.gallery li {
+		width: 33.3333333333333333%; 
+  	}
+  	.gallery li:nth-child(3n+1) {
+  		clear: left;
+  	}
+  	.gallery li:nth-child(odd) {
+		clear: none;
+	}
+}
+@media screen and (min-width: 55em) {
+	.gallery li {
+    	width: 25%; 
+  	}
+  	.gallery li:nth-child(4n+1) {
+  		clear: left;
+  	}
+  	.gallery li:nth-child(3n+1) {
+		clear: none;
+	}
+}
+@media screen and (min-width: 72em) {
+	.gallery li {
+    	width: 20%; 
+  	}
+  	.gallery li:nth-child(5n+1) {
+  		clear: left;
+  	}
+  	.gallery li:nth-child(4n+1) {
+		clear: none;
+	}
+}
+@media screen and (min-width: 90em) {
+	.gallery li {
+    	width: 16.666666666%; 
+  	}
+  	.gallery li:nth-child(6n+1) {
+  		clear: left;
+  	}
+  	.gallery li:nth-child(5n+1) {
+		clear: none;
+	}
+}
+
+.fa-check-square-o {
+	color: black;
+}
+.thumb {
+    margin-bottom: 30px;
+}
+#styles-section h3 {
+	font-size: .8em;
+	text-transform: uppercase;
+}
+
+#services-section {
+	background-color: #FFD500;
+	color: white;
+}
+.fa-star {
+	color: black;
+}
+#services-section ul {
+	font-size: 1.4em;
+	font-style: italic;
+}
+
+#testimonials-section {
+	background-color: red;
+	color: white;
+	padding-top: 4%;
+	padding-bottom: 0%;
+}
+.fa-square {
+	color: white;
+}
+
+#contact-section {
+	background: url(../img/Pinstriped_Suit.png);		/* Background pattern from subtlepatterns.com */
+	color: white;
+	padding-top: 4%;
+	padding-bottom: 5%;
+}
+.fa-thumbs-o-up {
+	color: black;
+}
+.fa-mobile {
+	color: black;
+}
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, red, red);
+   background: -moz-linear-gradient(top, red, red);
+   background: -ms-linear-gradient(top, red, red);
+   background: -o-linear-gradient(top, red, red);
+   padding: 9.5px 19px;
+   -webkit-border-radius: 13px;
+   -moz-border-radius: 13px;
+   border-radius: 13px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 19px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #A60C00;
+   background: #A60C00;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: red;
+   background: red;
+   }
+#contact-section p {
+	margin-top: 40px;
+    text-shadow:
+    -1px -1px 0 red,
+    1px -1px 0 red,
+    -1px 1px 0 red,
+    1px 1px 0 red;
+}
+#contact-section a:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 30px 0px red;
+-moz-box-shadow:    0px 0px 30px 0px red;
+box-shadow:         0px 0px 30px 0px red;
+}
+
+#location-section {
+	background: url(../img/Pinstriped_Suit.png);		/* Background pattern from subtlepatterns.com */
+	padding-top: 4%;
+	color: white;
+	padding-bottom: 5%;
+}
+.fa-road {
+	color: black;
+}
+
+#author-footer {
+	background-color: #FFD500;
+	color: dark gray;
+	font-weight: bold;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+
+
+@media (max-width: 650px) {
+	.tiny-hidden {
+		display: none;
+	}
+	.tiny-visible {
+		display: inline;
+	}
+}
+@media (min-width: 650px) {
+	.tiny-visible {
+		display: none;
+	}
+}
+@media (max-width: 672px) {
+	#downtown {
+		font-size: 1.1em !important;
+		letter-spacing: .05em !important;
+	}
+}
+@media (min-width: 672px) and (max-width: 768px) {
+	#downtown {
+		font-size: 1.4em !important;
+		letter-spacing: .15em !important;
+	}
+}
+@media (max-width: 768px) {
+	#google-container {
+		height: 300px;
+	}
+	.lessened-letter-spacing-small {
+		letter-spacing: .3em !important;
+	}
+	#noggin {
+		font-size: 3.75em !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+	.lessened-letter-spacing-small {
+		letter-spacing: .25em !important;
+	}
+	#noggin {
+		font-size: 4.25em !important;
+	}
+}
+@media (max-width: 1000px) {
+	#Mitch-King-possessive {
+		font-size: 1.5rem !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+	.larger-font-size-medium {
+		font-size: 110%;
+	}
+	#downtown {
+		font-size: 125%;
+	}
+}
+@media (max-width: 1108px) {
+	.hidden-nonmediumlargish {
+		display: none;
+	}
+}
+@media (max-width: 1200px) {
+	#google-container {
+		height: 400px;
+	}
+	.smaller-text-nonlarge
+	{
+		font-size: 20px !important;
+	}
+	.hidden-nonlarge {
+		display: none;
+	}
+}
+@media (min-width: 1200px) {
+	.hidden-large {
+		display: none;
+	}
+}

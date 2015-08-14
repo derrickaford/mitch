@@ -1,0 +1,105 @@
+.barberAnim {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  padding: 1.5em 0em;
+}
+.barberAnim p {
+  letter-spacing: .5em;
+  width: 100%;
+}
+.barberAnim p span {
+  font-size: 3.75em;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: -webkit-linear-gradient(to top left, red 24%, #ecf0f1 26%, #ecf0f1 49%, red 51%, red 74%, #ecf0f1 76%);
+  background: -webkit-linear-gradient(bottom right, red 24%, #ecf0f1 26%, #ecf0f1 49%, red 51%, red 74%, #ecf0f1 76%);
+  background: linear-gradient(to top left, red 24%, #0A64A4 26%, #ecf0f1 49%, red 51%, red 74%, #ecf0f1 76%);
+  background-size: 100px 100px;
+  -webkit-background-clip: text;
+  color: white;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  -webkit-animation: barberPole 45s ease infinite;
+          animation: barberPole 45s ease infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes barberPole {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes barberPole {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.ribLeft {
+  position: relative;
+  width: calc(100% - 200px);
+  padding: 10px 20px 7px 50px;
+  background-color: red;
+  margin: 30px auto 30px auto;
+}
+.ribLeft:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  top: 100%;
+  border-width: 7px 10px;
+  border-style: solid;
+  border-color: #A60C00 #A60C00 transparent transparent;
+}
+.ribLeft:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 0;
+  left: -30px;
+  top: 12px;
+  border-width: 10px 10px;
+  border-style: solid;
+  border-color: red red red transparent;
+}
+/**/
+.ribRight {
+  position: relative;
+  width: calc(100% - 200px);
+  padding: 10px 20px 7px 50px;
+  background-color: red;
+  margin: 30px auto 30px auto;
+}
+.ribRight:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0px;
+  top: 100%;
+  border-width: 7px 10px;
+  border-style: solid;
+  border-color: #A60C00 transparent transparent #A60C00;
+}
+.ribRight:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 0;
+  right: -30px;
+  top: 11px;
+  border-width: 10px 10px;
+  border-style: solid;
+  border-color: red transparent red red;
+}

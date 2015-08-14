@@ -1,0 +1,356 @@
+<!-- included: Reset, Modernizr, Slabo [Google Fonts], Font Awesome, Side Team Member Bio + Client Testimonials Carousel + Custom Google Map [Codyhouse], Barber Animation [Codepen], Sliced Text [Codepen], Minecraft Splash Text [Javascript Fiddle], Back to Top [Codyhouse] -->
+
+<!-- [Codepen] - copyright
+Copyright (c) 2015 by @TimLamber (http://codepen.io/TimLamber/pen/KwVvjP), @joeyhoer (http://codepen.io/joeyhoer/pen/kmrdL), @peterhry (http://codepen.io/peterhry/pen/CutrA)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!doctype html>
+<html lang="en" class="no-js">		<!-- the 'no-js' class is a toggle describing use of Modernizr -->
+<head>
+	<!-- metadata -->
+    <meta charset="utf-8">	<!-- Unicode characterset -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	<!-- Internet Explorer compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">	<!-- renders the page according to the device width -->
+    <meta name="description" content="Welcome to Mitch King's Noggin Barber in downtown Zionsville, Indiana! If you are looking for a traditional, business, or trendy haircut, Mitch's Noggin Barber will provide.">		<!-- description [shown on searchengine result] -->
+    <meta name="keywords" content="Barber, Barbershop, haircut, haircuts, King, Mitch, Mitch's, Noggin, Shop, Zionsville, trim, downtown, Indiana">		<!-- keywords for searchengine optimization -->
+    <meta name="author" content="Hunter Bobeck">		<!-- author name -->
+    <link rel="icon" href="img\icon.ico">		<!-- favicon -->
+    <title>Mitch's Noggin Barber | Zionsville</title>		<!-- title -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">		<!-- Reset -->
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>	<!-- Slabo [Google Fonts] -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/style.css">	<!-- 'Side Team Member Bio' [Codyhouse] + 'Client Testimonials Carousel' [Codyhouse] + 'Custom Google Map' [Codyhouse] -->
+	<link rel="stylesheet" href="css/animation.css">	<!-- Barber Animation [Codepen] -->
+	<link rel="stylesheet" href="css/sliced-text.css">	<!-- Sliced Text [Codepen] -->
+	<link rel="stylesheet" href="css/splash.css">	<!-- Minecraft Splash Text [Javascript Fiddle] -->
+	<link rel="stylesheet" href="css/custom.css">		<!-- custom -->
+	
+	<!-- preJavascript -->
+	<script src="js/modernizr.js"></script>		<!-- Modernizr -->
+	<script src="js/prefixfree.min.js"></script>	<!-- Barber Animation [Codepen] (not sure why it's preloaded) -->
+</head>
+
+<body>
+	<main>
+        <!-- Side Team Member Bio [Codepen] ///////////////////////////////////////////////////////// -->
+        <!-- #title section -->
+		<header id="title-section" class="cd-section">
+			<div class="cd-container">
+				<br class="hidden-large">
+				<!-- Barber Animation [Codepen] -->
+				<hr class="ribLeft">
+	 			<section class="barberAnim">
+	 				<img src="img/Logo.png" alt="Logo">
+					<div class="tilt hidden-nonmediumlargish" style="margin-left: -240px"><div id="status" class="pop">I&nbsp;will&nbsp;cut&nbsp;you!</div></div>	<!-- Minecraft Splash Text [Javascript Fiddle] -->
+	    			<p id="Mitch-King-possessive" class="lessened-letter-spacing-small" style="color: red; font-size: 2rem; font-weight: 600">MITCH KING'S</p>
+                    <h1 id="noggin" style="margin-top: 20px; margin-bottom: -100px">NOGGIN</h1>     <!-- Sliced Text [Codepen] -->
+                    <p><span id="barber-shop" class="larger-font-size-medium">BARBER</span></p>
+                    <p id="downtown" class="larger-font-size-medium lessened-letter-spacing-small" style="color: white">IN DOWNTOWN ZIONSVILLE</p>
+				</section>
+				<hr class="ribRight">
+				<br class="hidden-large">
+				<br class="hidden-large">
+			</div>
+		</header>
+		
+		<!-- #Profile section -->
+		<section id="cd-team" class="cd-section">
+			<div class="cd-container"><ul><li>
+				<a data-type="member-1">
+					<div class="cd-member-info" style="color: black; font-weight: bold; font-size: 140%; height: 100px">
+					MITCH KING <span style="color: blue; font-size: 95%;">Real Licensed Barber</span></div>
+				</a>
+			</li></ul></div>
+			<br class="hidden-nonlarge">
+			<p class="smaller-text-nonlarge" style="color: white; font-size: 24px; margin: 35px">
+				Mitch has been cutting hair in Zionsville since 2001.<br class="hidden-nonlarge"><span class="hidden-large"> </span>If you are looking for a traditional, business, or trendy haircut, Mitch's Noggin Barber will provide.
+			</p>
+			<br class="hidden-large">
+			<br class="hidden-large">
+		</section>
+		
+		<!-- #Location section -->
+		<section id="location-section" class="cd-section cd-placeholder-2">
+			<br class="hidden-large">
+			<div class="cd-container">
+				<span class="fa-stack fa-5x"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-road fa-stack-1x"></i></span>
+				<h2>LOCATION</h2>
+				<br>
+				<!-- Custom Google Map [Codyhouse] -->
+				<section id="cd-google-map">
+					<div id="google-container"></div>
+					<div id="cd-zoom-in"></div>
+					<div id="cd-zoom-out"></div>
+					<address>156 South 1st Street Zionsville, IN, 46077</address> 
+				</section>
+			</div>
+			<br class="hidden-large">
+			<br class="hidden-large">
+		</section>
+		
+		<!-- #Services section -->
+		<section id="services-section" class="cd-section">
+			<span class="fa-stack fa-5x"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+			<h2 style="color: red">SERVICES</h2>
+			<div style="background-color: red; border-radius: 15px; padding: 30px; margin: 35px">
+	            <ul>
+	                <li><span style="font-weight: bold">Noggin Cut</span>:	<span style="color: #FFD500">$19</span><br class="tiny-visible" style="display: hidden"><span class="tiny-hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Neck Shave:	<span style="color: #FFD500">+$2</span></li>
+	                <li>Shampoo:	<span style="color: #FFD500">+$10</span><br class="tiny-visible"><span class="tiny-hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Grey Blending:	<span style="color: #FFD500">$35</span></li>
+	                <li>Beard Trim:	<span style="color: #FFD500">+$5</span><br class="tiny-visible"><span class="tiny-hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FFD500">[cash only]</span></li>
+	                <br>
+	                <span style="text-decoration: underline">
+		                <li>Great Parking</li>
+		                <li>Prompt Appointments</li>
+		                <li>Private</li>
+	                </span>
+	            </ul>
+	        </div>
+		</section>
+		
+		<!-- #Styles section -->
+		<section id="styles-section" class="cd-section">
+			<span class="fa-stack fa-5x"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-check-square-o fa-stack-1x"></i></span>
+			<h2>STYLES</h2>
+			<div class="centered">
+				<div id="pattern" class="pattern">
+				  	<ul class="gallery">
+						<li><img src="img/Style (1).png" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (1).jpg" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (2).png" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (2).jpg" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (3).png" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (3).jpg" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (4).png" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (4).jpg" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (5).png" alt="Mitch can cut this style!" /></li>
+						<li><img src="img/Style (6).png" alt="Mitch can cut this style!" /></li>
+					</ul>
+				</div>
+			</div>
+			<br class="hidden-large">
+		</section>
+		
+		<!-- #Testimonials section -->
+		<section id="testimonials-section" class="cd-section cd-placeholder-0">
+			<div class="cd-container" style="">
+				<a href="mailto:hdbipod@gmail.com?Subject=add this testimonial to Mitch King's Noggin Barber" target="_blank"><span class="fa-stack fa-5x"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-thumbs-o-up fa-stack-1x"></i></span></a>
+				<h2>TESTIMONIALS</h2>
+				<!-- Client Testimonials Carousel [Codyhouse] -->
+				<div class="cd-testimonials-wrapper cd-container">
+					<ul class="cd-testimonials">
+						<li>
+							<p>Mitch is a great barber and I have really enjoyed coming to him for haircuts. He is flexible in his hours, knows his clients well, and is good at what he does. I highly recommend him!</p>
+							<div class="cd-author">
+								<img src="img/Derek-Hale.jpg" alt="Derek Hale">
+								<ul class="cd-author-info">
+									<li>Derek Hale</li>
+									<li>AMC Theatres</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>Mitch has been cutting my hair for many years and is now cutting both of my sons. Great new location and an awesome guy. Go check him out; you won't be sorry!</p>
+							<div class="cd-author">
+								<img src="img/Scott-Powell.jpg" alt="Scott Powell">
+								<ul class="cd-author-info">
+									<li>Scott Powell</li>
+									<li>Accountant</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>Mitch has trimmed my brother and I up over the ears for years. I can't recommend him enough for his great style, and he's just in downtown Zionsville!</p>
+							<div class="cd-author">
+								<img src="img/Hunter-Bobeck.jpg" alt="Hunter Bobeck">
+								<ul class="cd-author-info">
+									<li>Hunter Bobeck</li>
+									<li>author of this site</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>Awesome barber! Great location & great barber shop. Relaxing atmosphere with a barber who knows his clients well. Check out Noggin... You won't regret it.</p>
+							<div class="cd-author">
+								<img src="img/Blakeleigh-King.jpg" alt="Blakeleigh King">
+								<ul class="cd-author-info">
+									<li>Blakeleigh King</li>
+									<li> </li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>Mitch is an excellent barber.....plus he knows a thing or two about football!</p>
+							<div class="cd-author">
+								<img src="img/Derek-Mandel.jpg" alt="Derek Mandel">
+								<ul class="cd-author-info">
+									<li>Derek Mandel</li>
+									<li> </li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>Mitch is the man! Great cut, great environment. Always nice talking sports...</p>
+							<div class="cd-author">
+								<img src="img/Tyler-Ug-Koch.jpg" alt="Tyler Ug Koch">
+								<ul class="cd-author-info">
+									<li>Tyler Ug Koch</li>
+									<li> </li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>Mitch has been cutting my hair for over 5 years and I highly recommend him. One of the many things I like about Mitch is that when he gives you an appointment, he is always punctual.</p>
+							<div class="cd-author">
+								<img src="img/Lou-Vitale.jpg" alt="Lou Vitale">
+								<ul class="cd-author-info">
+									<li>Lou Vitale</li>
+									<li> </li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<a href="#0" class="cd-see-all" style="font-size: 100%">SEE ALL</a>
+				</div>
+				<div class="cd-testimonials-all">
+					<div class="cd-testimonials-all-wrapper">
+						<ul>
+							<li class="cd-testimonials-item">
+								<p>Mitch is a great barber and I have really enjoyed coming to him for haircuts. He is flexible in his hours, knows his clients well, and is good at what he does. I highly recommend him!</p>
+								<div class="cd-author">
+									<img src="img/Derek-Hale.jpg" alt="Derek Hale">
+									<ul class="cd-author-info">
+										<li>Derek Hale</li>
+									</ul>
+								</div>
+							</li>
+							<li class="cd-testimonials-item">
+								<p>Mitch has been cutting my hair for many years and is now cutting both of my sons. Great new location and an awesome guy. Go check him out; you won't be sorry!</p>
+								<div class="cd-author">
+									<img src="img/Scott-Powell.jpg" alt="Scott Powell">
+									<ul class="cd-author-info">
+										<li>Scott Powell</li>
+									</ul>
+								</div>
+							</li>
+							<li class="cd-testimonials-item">
+								<p>Mitch has trimmed my brother and I up over the ears for years. I can't recommend him enough for his great style, and he's just in downtown Zionsville!</p>
+								<div class="cd-author">
+									<img src="img/Hunter-Bobeck.jpg" alt="Hunter Bobeck">
+									<ul class="cd-author-info">
+										<li>Hunter Bobeck</li>
+									</ul>
+								</div>
+							</li>
+							<li class="cd-testimonials-item">
+								<p>Awesome barber! Great location & great barber shop. Relaxing atmosphere with a barber who knows his clients well. Check out Noggin... You won't regret it.</p>
+								<div class="cd-author">
+									<img src="img/Blakeleigh-King.jpg" alt="Blakeleigh King">
+									<ul class="cd-author-info">
+										<li>Blakeleigh King</li>
+									</ul>
+								</div>
+							</li>
+							<li class="cd-testimonials-item">
+								<p>Mitch is an excellent barber.....plus he knows a thing or two about football!</p>
+								<div class="cd-author">
+									<img src="img/Derek-Mandel.jpg" alt="Derek Mandel">
+									<ul class="cd-author-info">
+										<li>Derek Mandel</li>
+									</ul>
+								</div>
+							</li>
+							<li class="cd-testimonials-item">
+								<p>Mitch is the man! Great cut, great environment. Always nice talking sports...</p>
+								<div class="cd-author">
+									<img src="img/Tyler-Ug-Koch.jpg" alt="Tyler Ug Koch">
+									<ul class="cd-author-info">
+										<li>Tyler Ug Koch</li>
+									</ul>
+								</div>
+							</li>
+							<li class="cd-testimonials-item">
+								<p>Mitch has been cutting my hair for over 5 years and I highly recommend him. One of the many things I like about Mitch is that when he gives you an appointment, he is always punctual.</p>
+								<div class="cd-author">
+									<img src="img/Lou-Vitale.jpg" alt="Lou Vitale">
+									<ul class="cd-author-info">
+										<li>Lou Vitale</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<a href="#0" class="close-btn">Close</a>
+				</div>
+			</div>
+			<br class="hidden-large">
+		</section>
+		
+		<!-- #Contact section -->
+		<section id="contact-section" class="cd-section cd-placeholder-1">
+			<div class="cd-container">
+				<span class="fa-stack fa-5x"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-mobile fa-stack-1x"></i></span>
+				<h2>CONTACT</h2>
+				<br>
+				<button class="button" href="tel:+13173440336" style="height: 85px; width: 200px; font-size: 130%">CALL »<br>(317) 344-0336</button>
+				&nbsp;&nbsp;
+				<button class="button" href="sms:+13179858003" style="height: 85px; width: 200px; font-size: 130%">TEXT »<br>(317) 985-8003</button>
+				<br>
+				<br>
+				<br>
+				<a href="https://www.facebook.com/nogginbarber">
+					<img src="img/facebook.png" alt="Facebook">
+				</a>
+				<a href="https://plus.google.com/113780941198299750130/">
+					<img src="img/google-plus.png" alt="Google +">
+				</a>
+				<a href="https://www.linkedin.com/pub/mitch-king/3b/752/88b">
+					<img src="img/linkedin.png" alt="Linkedin">
+				</a>
+				<a href="mailto:nogginszville@gmail.com">
+					<img src="img/email.png" alt="Email">
+				</a>
+			</div>
+			<br class="hidden-large">
+		</section>
+		
+		<!-- footer -->
+		<section id="author-footer" class="cd-section cd-placeholder-3">
+			<div class="cd-container">
+				<p>website by <a href="http://www.HunterBobeck.me" target="blank">Hunter Bobeck</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:hdbipod@gmail.com"><i class="fa fa-envelope"></i></a></p>
+			</div>
+		</section>
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	
+		<!-- 'Back to Top' [Codyhouse] -->
+		<a href="#0" class="cd-top">Top</a>
+	</main>
+	
+	<!-- postJavascript -->
+	<!-- 'Side Team Member Bio' [Codyhouse] -->
+	<script src="js/jquery.min.js"></script>
+	<!-- 'Client Testimonials Carousel' [Codyhouse] -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/main-client.js"></script>
+	<!-- 'Custom Google Map' [Codyhouse] -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDinAoOWl_UVgy0ptWFSAoDG3K8QUczTQA"></script>
+	<script src="js/main-custom.js"></script>
+	<!-- Barber Animation [Codepen] -->
+	<script src='js/jquery.js'></script>
+	<!-- Sliced Text [Codepen] -->
+	<script src='js/jquery.lettering-min.js'></script>
+	<script src="js/sliced-text.js"></script>
+	<!-- 'Back to Top' [Codyhouse] -->
+	<script src="js/main-back.js"></script>
+</body>
+</html>
