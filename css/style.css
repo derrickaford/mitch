@@ -996,6 +996,9 @@ Main components
   text-align: center;
 }
 
+#mobile-visible {
+  display: none;
+}
 @media (max-width: 550px) {
   #call {
     position: relative;
@@ -1003,6 +1006,9 @@ Main components
   }
   #mobile-hidden {
     display: none;
+  }
+  #mobile-visible {
+    display: inline;
   }
 }
 
