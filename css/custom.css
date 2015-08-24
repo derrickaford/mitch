@@ -17,7 +17,7 @@ a:hover {
 #title-section {
 	padding-top: 4%;
 	padding-bottom: 4%;
-	background: url(../img/Pinstriped_Suit.png);		/* Background pattern from subtlepatterns.com */
+	background: url(../img/Pinstriped_Suit.png);
 }
 .ribLeft {
 	margin-top: -10px;
@@ -66,7 +66,7 @@ a:hover {
 }
 
 #styles-section {
-	background: url(../img/Pinstriped_Suit.png);		/* Background pattern from subtlepatterns.com */
+	background: url(../img/Pinstriped_Suit.png);
 	color: white;
 }
 .centered {
@@ -169,7 +169,7 @@ a:hover {
 }
 
 #contact-section {
-	background: url(../img/Pinstriped_Suit.png);		/* Background pattern from subtlepatterns.com */
+	background: url(../img/Pinstriped_Suit.png);
 	color: white;
 	padding-top: 4%;
 	padding-bottom: 5%;
@@ -229,7 +229,7 @@ box-shadow:         0px 0px 30px 0px red;
 }
 
 #location-section {
-	background: url(../img/Pinstriped_Suit.png);		/* Background pattern from subtlepatterns.com */
+	background: url(../img/Pinstriped_Suit.png);
 	padding-top: 4%;
 	color: white;
 	padding-bottom: 5%;
