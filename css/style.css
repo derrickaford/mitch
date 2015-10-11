@@ -1021,7 +1021,7 @@ Main components
   #testimonials-section {
     display: none;
   }
-  #services-section {
-    background-color: red;
+  #styles-section {
+    background-color: red !important;
   }
 }
