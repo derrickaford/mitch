@@ -1022,6 +1022,6 @@ Main components
     display: none;
   }
   #styles-section {
-    background-color: red !important;
+    background: red !important;
   }
 }
