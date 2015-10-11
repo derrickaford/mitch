@@ -188,6 +188,7 @@ jQuery(document).ready(function($){
 	var map_options = {
       	center: new google.maps.LatLng(latitude, longitude),
       	zoom: map_zoom,
+      	draggable: false,
       	panControl: false,
       	zoomControl: false,
       	mapTypeControl: false,
