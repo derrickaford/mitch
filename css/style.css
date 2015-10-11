@@ -1012,3 +1012,16 @@ Main components
     width: 300px !important;
   }
 }
+@media (max-width: 400px) {
+  .ribLeft, .ribRight {
+    width: 240px !important;
+  }
+}
+@media (max-width: 450px) {
+  #testimonials-section {
+    display: none;
+  }
+  #services-section {
+    background-color: red;
+  }
+}
